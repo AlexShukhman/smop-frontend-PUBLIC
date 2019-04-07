@@ -1,0 +1,10 @@
+[PM2] Spawning PM2 daemon with pm2_home=/Users/alexshukhman/.pm2
+[PM2] PM2 Successfully daemonized
+[PM2] Starting /Users/alexshukhman/Sites/smop/bin/www.js in fork_mode (1 instance)
+[PM2] Done.
+┌──────────┬────┬──────┬───────┬────────┬─────────┬────────┬─────┬───────────┬──────────────┬──────────┐
+│ App name │ id │ mode │ pid   │ status │ restart │ uptime │ cpu │ mem       │ user         │ watching │
+├──────────┼────┼──────┼───────┼────────┼─────────┼────────┼─────┼───────────┼──────────────┼──────────┤
+│ www      │ 0  │ fork │ 58311 │ online │ 0       │ 0s     │ 3%  │ 13.3 MB   │ alexshukhman │ disabled │
+└──────────┴────┴──────┴───────┴────────┴─────────┴────────┴─────┴───────────┴──────────────┴──────────┘
+ Use `pm2 show <id|name>` to get more details about an app

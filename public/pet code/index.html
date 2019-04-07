@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Software Freelancing - Smop Technologies</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Find the work you need at a fraction of the time. Smop is an application by Smop Technologies LLC that brings the software freelancing market to you. With short, competitive tasks and a bounty-based payout system, Smop offers the best code for any situation without requiring lengthy vetting processes or long, drawn-out payment discussions. Just go in, get your work and let the great ideas flow!">
+    <meta name="author" content="Smop Technologies LLC">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- PayPal -->
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="custom.css">
+    <!-- angular.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <!-- socket.io -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <!-- For the Lato -->
+    <link href='https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <!-- For the Inconsolata -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&subset=latin-ext" rel="stylesheet"> </head>
+
+<body>
+    <!--hero image-->
+    <div class="Basic-Text-Frame">
+        <div class="Basic-Paragraph para-style-override-1" id='heroImage'>
+        </div>
+    </div>
+    <div id="loginForm" class="container">
+        <br/>
+        <form id="newUserForm" class='loginForm' action="/create_user" method='post'>
+            <input id='usernameField' name="user" placeholder="user" class="customInput" type="text">
+            <br/>
+            <input name="email" placeholder="email" class="customInput" type="text">
+            <br/>
+            <input id='pass' name="pass" placeholder="password" class="customInput" type="password">
+            <br/>
+            <input id='passCheck' name="passCheck" placeholder="re-enter password" class="customInput" type="password">
+            <br/>
+            <p id="passwordError" style="color:red;">passwords don't match.</p>
+            <p id="usernameError" style="color:red">username already exists.</p>
+            <br/>
+            <button id="submitButton" class="customButton" type="submit">
+                <a>Submit</a>
+            </button>
+            <p id="info">This will send you an email to verify your email address. Please check to see if you have it, it may have gone
+                to spam.</p>
+        </form>
+    </div>
+
+    <!-- load js -->
+    <script src="script.js"></script>
+    <!-- Footer -->
+    <div class="footer"> Smop Technologies &copy; 2018 --
+        <a href="mailto:info@smop.io">info@smop.io</a> --
+        <a id="WP" href="https://smoptechnologies.wordpress.com/">WP</a> --
+        <a id="IG" href="https://www.instagram.com/smoptechnologies/">IG</a> --
+        <a id="FB" href="https://www.facebook.com/smoptechnologies/">FB</a> --
+        <a id="LI" href="https://www.linkedin.com/company/smop_technologies/">LI</a>
+        <a href="https://smop.io">
+            <img src="https://smop.io/images/built.png" alt="Built with a little help from Smop Technologies" height="100%" style="right: 0; position: absolute;">
+        </a>
+    </div>
+    <div id="textarea"></div>
+</body>
+
+</html>

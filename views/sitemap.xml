@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+
+<loc>https://smop.io/index</loc>
+
+<lastmod>2018-07-03</lastmod>
+
+<changefreq>weekly</changefreq>
+
+<priority>1.0</priority>
+
+</url>
+
+
+<url>
+
+<loc>https://smop.io/login</loc>
+
+<lastmod>2018-06-24</lastmod>
+
+<changefreq>monthly</changefreq>
+
+</url>
+
+</urlset>

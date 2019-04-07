@@ -1,0 +1,34 @@
+<body>
+	<!--hero image-->
+	<div class="Basic-Text-Frame">
+		<div class="Basic-Paragraph para-style-override-1" id='heroImage'>
+			</p>
+		</div>
+	</div>
+	<!-- make login html -->
+	<div class='containerCustom' id='loginContainer'> <a id="loginButton" class="loginButtonFont" onclick="openLogin()" href="#">Login</a> </div>
+	<div id="loginForm" class="container">
+		<br/>
+		<form class="loginForm" action="/login" method="post">
+			<input name="user" placeholder="user" class="customInput" type="text">
+			<br/>
+			<input name="pass" placeholder="password" class="customInput" type="password">
+			<br/>
+			<button class="customButton" type="submit"><a>Login</a></button>
+			<br/>
+			<a onclick="forgotPassword()">Forgot password?</a>
+			<p id="email" style="padding-left: 5px; padding-right: 5px; color: gray;"></p>
+	</div>
+	</div>
+	<br/><a id='newUserButton' class="loginButtonFont" href='new_user' style="font-size:12pt;">New User?</a>
+	<br><br>
+	<div id="forgotFormWrap" class="container" style="text-align: center;">
+		<form id="forgotForm">
+			<input style="width: 25%;" type="text" name="email" id="femail" class="customInput" placeholder="your email">
+			<button class="customButton" type="button" onclick="sendForgot()">Reset Password</button>
+			<p style="color: gray; text-align: center">This will send you an email to reset your password</p>
+		</form>
+		<p id="sent" style="color: gray" hidden>email sent, please close this page and follow link given</p>
+	</div>
+	<!-- load js -->
+	<script src="javascripts/login_owner.js"></script>

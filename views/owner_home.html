@@ -1,0 +1,103 @@
+<body>
+	<div class="dropdown">
+		<img src="../images/smopblack.png" alt="options" class="imagedropdown" href="/">
+		<div id="myDropdown" class="dropdown-content">
+			<a href="/">Home</a>
+			<button class="customButton dropdownbutton">
+				<a href="/logout">Logout</a>
+			</button>
+		</div>
+	</div>
+	<div class="pageTitle ownercolor">owner home.</div>
+	<div class="choice customchoice">
+		<div id="editorContainer container" class="taskFormContainer">
+			<form class='taskForm' id='formHeader' enctype="multipart/form-data">
+				<div id="taskname">
+					<br/>Task Name:
+					<br/>
+					<input id="name" name="name" placeholder="Task Name" class="customInput" type="text">
+					<br/> </div>
+				<div id="language">
+					<br/>Languages:
+					<br/>
+					<input id="lang" name="lang" placeholder="Languages" class="customInput" type="text">
+					<br/> </div>
+				<div id="short_message">
+					<br/>Display Message:
+					<br/>
+					<input id="task_message_short" name="task_message_short" placeholder="Task Summary" class="customInput" type="text">
+					<br/> </div>
+				<div id="long_message">
+					<br/>Longer Task Description:
+					<br/>
+					<br/>
+					<textarea id="task_message_long" class="customInput customInput_tall" name="task_message_long" placeholder="Full Task Message"
+					    class="customInput customInput_tall" type="text"></textarea>
+					<br/> </div>
+				<div id="bty">
+					<br/>Bounty ($):
+					<br/>
+					<input id="bounty" name="bounty" placeholder="Bounty (number only)" class="customInput" type="number" min="0" step="1">
+					<br/> </div>
+				<div id='code'>
+					<br/> Pet Code:
+					<br/>
+					<br/>
+					<input type="file" name="task_pet_code" id="task_pet_code" multiple="multiple">
+					<br/>
+					<div id="filedump"></div>
+				</div>
+				<div id='parth'>
+					<br/> Unit Tests:
+					<br/>
+					<div class='editor customInput customInput_tall' id='PARTHEditor' name="task_unit_tests"></div>
+					<br/> </div>
+				<div id='sp'>
+					<br/>
+					<br/>
+					<br/>
+					<br/> </div>
+				<button id='save' class="customButton" type="button" onclick="return submitForm();" title="your task will be submitted for approval!">
+					<a>Save</a>
+				</button>
+				<div id="progress"></div>
+				<button id='next' class="customButton" type="button" onclick="return nextPage();">
+					<a>Next</a>
+				</button>
+				<button id='back' class="customButton" type="button" onclick="return prevPage();">
+					<a>Back</a>
+				</button>
+				<button class="customButton" type="button" onclick="location.reload(true)">
+					<a>New Task</a>
+				</button>
+				<br/>
+				<br/> </form>
+			<div id="editorReturn"></div>
+		</div>
+		<div id="chatwrapper" class="clr chatwrapper"></div>
+		<div id="feed_wrapper" class="feed">
+			<div class="feedheader" title="click any task below to get started or create your own task to the left">tasks:</div>
+			<div id="feed"></div>
+		</div>
+	</div>
+	<div class="invisible codereturn">
+		<h1>Winning Code</h1>
+		<div id='solution' class="result"></div>
+	</div>
+	<div class="chatWrapper">
+		<div class="chatHead">
+			<div id="chatMessage" title="Answer Coders' Questions Here">Chat with Coders</div>
+			<button class="customButton rightbutton" id="chatMin" onclick="minimizeChat()">
+				<a>-</a>
+			</button>
+			<button class="customButton rightbutton" id="chatMax" onclick="maximizeChat()">
+				<a>+</a>
+			</button>
+		</div>
+		<div class="chatView">
+			<div id="chat"></div>
+			<input id="chatIn" class="customInput" placeholder="Type a message...">
+		</div>
+	</div>
+	<audio id="audio" src="https://www.soundjay.com/switch/sounds/switch-20.mp3" autostart="false"></audio>
+	<p id="desc" hidden></p>

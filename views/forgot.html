@@ -1,0 +1,25 @@
+<body>
+    <!--hero image-->
+    <div class="Basic-Text-Frame">
+        <div class="Basic-Paragraph para-style-override-1" id='heroImage'>
+            </p>
+        </div>
+    </div>
+    <!-- make login html -->
+    <div id="loginForm" class="container">
+        <br/>
+        <form class="loginForm" action="/remake" method="POST">
+            <input class="customInput" name="name" type="text" id="name" readonly>
+            <br/>
+            <input type="password" id="token" name="token" class="customInput" readonly>
+            <input placeholder="new password" class="customInput" type="password" name="pwd">
+            <br/>
+            <button class="customButton" type="button" onclick="submit()">
+                <a>New Password</a>
+            </button>
+            <br/>
+        </form>
+    </div>
+
+    <!-- load js -->
+    <script src="javascripts/forgot.js"></script>

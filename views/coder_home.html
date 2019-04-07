@@ -1,0 +1,57 @@
+<body>
+	<div class="dropdown">
+		<img src="../images/smopblack.png" alt="options" class="imagedropdown" href="/">
+		<div id="myDropdown" class="dropdown-content">
+			<a href="/">Home</a>
+			<a href="/logout">Logout</a>
+		</div>
+	</div>
+	<div class="pageTitle codercolor">coder home.</div>
+	<div class="choice customchoice">
+		<div id="editorContainer">
+			<button class="customButton getButton downloadAll">
+				<a>Get All Files</a>
+			</button>
+			<h2 id="filename" hidden></h2>
+			<div id="resizable">
+				<div class="editor" id="editor"></div>
+				<div class='downloader'>
+					<button class="customButton" id="downloader">
+						<a></a>
+					</button>
+				</div>
+				<div class="description" id="description"></div>
+				<div class="welcomemessage" id="welcomemessage">Click any task to start &rarr;</div>
+			</div>
+			<div class='fileslist' id="fileslist"></div>
+			<div id="editorReturn"></div>
+			<button id="saveButton" onclick="editorSave()" type="button" class="customButton saveButton" title="please save before submitting or starting another task">
+				<a>Save</a>
+			</button>
+			<button id="editorSubmitButton" class="customButton submitButton" type="button" onclick="editorSubmit()" title="this may take some time, please do not submit until ready">
+				<a>Submit</a>
+			</button>
+		</div>
+		<div id="feed_wrapper" class="feed">
+			<div class="feedheader" title="click any task below to get started">tasks:</div>
+			<div id="feed"></div>
+		</div>
+	</div>
+	<div class="chatWrapper">
+		<div class="chatHead">
+			<div id="chatMessage" title="got questions? ask the owner here">Chat with Owner</div>
+			<button class="customButton rightbutton" id="chatMin" onclick="minimizeChat()">
+				<a>-</a>
+			</button>
+			<button class="customButton rightbutton" id="chatMax" onclick="maximizeChat()">
+				<a>+</a>
+			</button>
+		</div>
+		<div class="chatView">
+			<div id="chat"></div>
+			<input id="chatIn" class="customInput" placeholder="Type a message...">
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+	<audio id="audio" src="https://www.soundjay.com/switch/sounds/switch-20.mp3" autostart="false"></audio>
+	<p id="desc" hidden></p>
